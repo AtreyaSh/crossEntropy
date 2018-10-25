@@ -2,4 +2,4 @@
 
 Eye candy while this develops...
 
-<img src "crossEntropy.gif" width = 500>
+<img src = "crossEntropy.gif" width = 500>
