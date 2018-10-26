@@ -16,11 +16,24 @@ The question then arises, can we use either cross-entropy or binary cross-entrop
 
 ### Cross-Entropy
 
-Below is a generic formula for cross-entropy, where `log` assume base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is `p` and the desired output is `q`.
+Below is a generic formula for cross-entropy, where `log` assume base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is probability `p` and the desired output is probability `q`. Naturally, p and q will have the range of `[0,1]`. This cross-entropy is undefined at 0 and 1, we will assume the `p` and `q` have the range of `(0,1)`.
 
-<p align="center"><img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/56568cdabc887cf1e1be78ecd50508c3.svg" align=middle width=656.3337pt height=580.9682999999999pt/></p>
+<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/d2a9f9a7e8d39592ff0b795fd716718b.svg" align=middle width=609.6255pt height=84.84168pt/>
+
+If we visualize this function in 3 dimensions, we arrive at the following rotating image.
 
 <p align = "center">
 <img src = "/crossEntropy.gif" width = 500>
 </p>
 
+We want to now calculate the partial derivative of `H(p,q)` with respect to `p`. `q` will remain fixed since it represents a desired output.
+
+<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/535e417811d64023c9719eae5e66fd3e.svg" align=middle width= 609.6255pt height=342.04994999999997pt/>
+
+Now, by minimizing the partial derivative of `H(p,v)`, we arrive at a possible stable state of the cross-entropy function.
+
+<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/ecce6cb739501abf291c2a1ed07b5260.svg" align=middle width=609.6255pt height=38.773514999999996pt/>
+
+The stable state occurs when `p = q`!
+
+[More coming...]
