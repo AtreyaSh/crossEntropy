@@ -16,8 +16,6 @@ The question then arises, can we use either cross-entropy or binary cross-entrop
 
 ### Cross-Entropy
 
-<img src="https://rawgit.com/in	git@github.com:AtreyaSh/deepUnlearning/master/svgs/90a146a8f353211bc4a7d660b9c46941.svg?invert_in_darkmode" align=middle width=160.923345pt height=28.926810000000007pt/>
-
 Some eye candy while this develops...
 
 <p align="center">
