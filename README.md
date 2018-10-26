@@ -32,7 +32,7 @@ We want to now calculate the partial derivative of `H(p,q)` with respect to `p`.
 
 Now, by minimizing the partial derivative of `H(p,v)`, we arrive at a possible stable state of the cross-entropy function.
 
-<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/ecce6cb739501abf291c2a1ed07b5260.svg" align=middle width=609.6255pt height=38.773514999999996pt/>
+<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/ecce6cb739501abf291c2a1ed07b5260.svg" align=middle width=450.6255pt height=38.773514999999996pt/>
 
 The stable state occurs when `p = q`!
 
