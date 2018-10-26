@@ -1,6 +1,5 @@
 # Exploring Deep Learning with TensorFlow
 
-<<<<<<< HEAD
 ## Utility of Cross-Entropy for Fuzzy/Soft Classification
 
 Within the field of deep learning, there exist various cost functions which essentially provide a gradient to train a deep learning model. Different cost functions are useful for different purposes. Deep learning tasks can typically be classified into classification and regression tasks.
@@ -18,9 +17,8 @@ The question then arises, can we use either cross-entropy or binary cross-entrop
 ### Cross-Entropy
 
 <img src="https://rawgit.com/in	git@github.com:AtreyaSh/deepUnlearning/master/svgs/90a146a8f353211bc4a7d660b9c46941.svg?invert_in_darkmode" align=middle width=160.923345pt height=28.926810000000007pt/>
-=======
+
 Some eye candy while this develops...
->>>>>>> 7ec32cf74d8438ba6a9a5e2f09a611cd7623e264
 
 <p align="center">
 <img src = "crossEntropy.gif" width = 500>
