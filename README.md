@@ -16,8 +16,11 @@ The question then arises, can we use either cross-entropy or binary cross-entrop
 
 ### Cross-Entropy
 
-Below is a generic formula for cross-entropy. Assume we are considering the binary cross-entropy (hence, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is `p` and the desired output is `q`.
+Below is a generic formula for cross-entropy, where `log` assume base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is `p` and the desired output is `q`.
 
-<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/e3c4673e033ff4bb7b53f7aeb73a9d07.svg" align=middle width=380.55484499999994pt height=28.926810000000007pt/>
+<img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/9f252a1867f124a78b1bb41ec68bab15.svg" align=middle width=610.33335pt height=113.42595000000001pt/>
 
-<img src= "/crossEntropy.gif" width = 500>
+<p align = "center">
+<img src "/crossEntropy.gif" width = 500>
+</p>
+
