@@ -20,4 +20,4 @@ Below is a generic formula for cross-entropy. Assume we are considering the bina
 
 <img src="https://github.com/AtreyaSh/deepUnlearning/blob/master/svgs/e3c4673e033ff4bb7b53f7aeb73a9d07.svg" align=middle width=380.55484499999994pt height=28.926810000000007pt/>
 
-<img src "/crossEntropy.gif" width = 500>
+<img src= "/crossEntropy.gif" width = 500>
