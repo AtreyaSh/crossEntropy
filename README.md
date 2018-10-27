@@ -36,4 +36,4 @@ Now, by minimizing the partial derivative of `H(p,v)`, we arrive at a possible s
 
 The stable state occurs when `p = q`!
 
-[More coming...]
+[More coming soon...]
