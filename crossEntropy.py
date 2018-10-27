@@ -17,14 +17,14 @@ g = 5
 # need to define granularity and number of iterations follow from there
 
 for i in range(int(360/g)):
-	fig = plt.figure()
-	ax = plt.axes(projection='3d')
-	ax.plot_surface(X, Y, Z, rstride=5, cstride=3, cmap='viridis', edgecolor='none')
-	ax.set_xlabel('x')
-	ax.set_ylabel('y')
-	ax.set_zlabel('z')
-	ax.view_init(30, g*i)
-	fig.savefig('img/test' + str(i) + ".png")
-	plt.close(fig)
+    fig = plt.figure()
+    ax = plt.axes(projection='3d')
+    ax.plot_surface(X, Y, Z, rstride=5, cstride=3, cmap='viridis', edgecolor='none')
+    ax.set_xlabel('p')
+    ax.set_ylabel('q')
+    ax.set_zlabel('H')
+    ax.view_init(30, g*i)
+    fig.savefig('img/test' + str(i) + ".png")
+    plt.close(fig)
 
 gifMkr(impath = os.getcwd()+"/img", gifpath = os.getcwd(), giftitle = "/crossEntropy.gif")
