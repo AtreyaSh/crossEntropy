@@ -14,7 +14,7 @@ The question then arises, can we use either cross-entropy or binary cross-entrop
 
 ## Cross-Entropy
 
-Below is a generic formula for cross-entropy, where `log` assumes base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is probability `p` and the desired output is probability `q`. Naturally, p and q will have the range of `[0,1]`. This cross-entropy is undefined at 0 and 1, we will assume the `p` and `q` have the range of `(0,1)`.
+Below is a generic formula for cross-entropy, where `log` assumes base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is probability `p` and the desired output is probability `q`. Naturally, p and q will have the range of `[0,1]`. Since cross-entropy is undefined at 0 and 1, we will assume the `p` and `q` have the range of `(0,1)` under the cross-entropy definition. This is just a mathematical trick to avoid singularities.
 
 <p><img src="/svgs/d2a9f9a7e8d39592ff0b795fd716718b.svg" align=middle width=609.6255pt height=84.84168pt/></p>
 
