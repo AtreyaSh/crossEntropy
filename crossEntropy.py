@@ -13,7 +13,7 @@ y = np.linspace(0.01, 0.99, 30)
 X, Y = np.meshgrid(x, y)
 Z = f(X, Y)
 
-g = 5
+g = 2
 # need to define granularity and number of iterations follow from there
 
 for i in range(int(360/g)):
@@ -27,4 +27,4 @@ for i in range(int(360/g)):
     fig.savefig('img/test' + str(i) + ".png")
     plt.close(fig)
 
-gifMkr(impath = os.getcwd()+"/img", gifpath = os.getcwd(), giftitle = "/crossEntropy.gif")
+gifMkr(impath = os.getcwd()+"/img", gifpath = os.getcwd(), giftitle = "/crossEntropy.gif", dur = 0.05)
