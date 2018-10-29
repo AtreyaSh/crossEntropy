@@ -35,7 +35,3 @@ Now, by minimizing the partial derivative of `H(p,v)`, we arrive at a possible s
 <p><img src="/svgs/ecce6cb739501abf291c2a1ed07b5260.svg" align=middle width=448.32809999999995pt height=38.773514999999996pt/></p>
 
 The stable state occurs when `p = q`. This shows that the cross-entropy function will push `p` towards the actual value of `q`. This would therefore imply that we can use cross-entropy for soft/fuzzy classification purposes!
-
-## Pre-commit hook
-
-A pre-commit hook called `pre-commit-mod.sample` has been added to this repository. It provides a temporary bug fix for the python `readme2tex` module due to rawgit services being down.
