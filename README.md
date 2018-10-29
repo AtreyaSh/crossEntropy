@@ -38,4 +38,4 @@ The stable state occurs when `p = q`. This shows that the cross-entropy function
 
 ## Pre-commit hook
 
-A pre-commit hook called `pre-commit-mod.sample` has been added to this repository. It provides a temporary bug fix due for the python `readme2tex` module due to rawgit services being down.
+A pre-commit hook called `pre-commit-mod.sample` has been added to this repository. It provides a temporary bug fix for the python `readme2tex` module due to rawgit services being down.
