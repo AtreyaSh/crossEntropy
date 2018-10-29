@@ -1,6 +1,4 @@
-# Exploring Deep Learning with TensorFlow
-
-## Utility of Cross-Entropy for Fuzzy/Soft Classification
+# Utility of Cross-Entropy for Fuzzy/Soft Classification
 
 Within the field of deep learning, there exist various cost functions which essentially provide a gradient to train a deep learning model. Different cost functions are useful for different purposes. Deep learning tasks can typically be classified into classification and regression tasks.
 
@@ -14,11 +12,11 @@ We know very well that we can use aggregated cross-entropy as a cost function fo
 
 The question then arises, can we use either cross-entropy or binary cross-entropy or both for the case of soft classification? With the help of a quick mathematical proof, I would like to provide evidence that we can indeed use both.
 
-### Cross-Entropy
+## Cross-Entropy
 
 Below is a generic formula for cross-entropy, where `log` assume base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is probability `p` and the desired output is probability `q`. Naturally, p and q will have the range of `[0,1]`. This cross-entropy is undefined at 0 and 1, we will assume the `p` and `q` have the range of `(0,1)`.
 
-<p><img src="/svgs/d2a9f9a7e8d39592ff0b795fd716718b.svg" align=middle width=609.6255pt height=84.84168pt/></p>
+<p align="center"><img src="https://rawgit.com/in	git@github.com:AtreyaSh/deepUnlearning/None/svgs/d2a9f9a7e8d39592ff0b795fd716718b.svg?invert_in_darkmode" align=middle width=609.6255pt height=84.84168pt/></p>
 
 If we visualize this function in 3 dimensions, we arrive at the following image.
 
@@ -28,12 +26,12 @@ If we visualize this function in 3 dimensions, we arrive at the following image.
 
 We want to now calculate the partial derivative of `H(p,q)` with respect to `p`. `q` will remain fixed since it represents a desired output.
 
-<p><img src="/svgs/535e417811d64023c9719eae5e66fd3e.svg" align=middle width=656.3337pt height=342.04994999999997pt/></p>
+<p align="center"><img src="https://rawgit.com/in	git@github.com:AtreyaSh/deepUnlearning/None/svgs/535e417811d64023c9719eae5e66fd3e.svg?invert_in_darkmode" align=middle width=656.3337pt height=342.04994999999997pt/></p>
 
 We want to understand where will `p` progress via gradient descent. We know that for one-hot/binary cases, `p` will tend to `q`, which is 1. However, we want to know if this is also the case if `q` is another number like 0.5.
 
 Now, by minimizing the partial derivative of `H(p,v)`, we arrive at a possible stable state of the cross-entropy function.
 
-<p><img src="/svgs/ecce6cb739501abf291c2a1ed07b5260.svg" align=middle width=448.32809999999995pt height=38.773514999999996pt/></p>
+<p align="center"><img src="https://rawgit.com/in	git@github.com:AtreyaSh/deepUnlearning/None/svgs/ecce6cb739501abf291c2a1ed07b5260.svg?invert_in_darkmode" align=middle width=448.32809999999995pt height=38.773514999999996pt/></p>
 
 The stable state occurs when `p = q`. This shows that the cross-entropy function will push `p` towards the actual value of `q`. This would therefore imply that we can use cross-entropy for soft/fuzzy classification purposes.
