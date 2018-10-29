@@ -1,6 +1,6 @@
 # Utility of Cross-Entropy in Fuzzy/Soft Classification
 
-Within the field of deep learning, there exist various cost functions which essentially provide a gradient to train a deep learning model. Different cost functions are useful for different purposes. Deep learning tasks can typically be classified into classification and regression tasks.
+Within the field of deep learning, there exist various cost functions which essentially provide gradients to train deep learning models. Different cost functions are useful for different purposes. Deep learning tasks can typically be classified into classification and regression tasks.
 
 1. Hard classification tasks are expected to output to one-hot vectors such as [0,1,0] or multi-label vectors such as [1,1,0].
 
@@ -14,7 +14,7 @@ The question then arises, can we use either cross-entropy or binary cross-entrop
 
 ## Cross-Entropy
 
-Below is a generic formula for cross-entropy, where `log` assume base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is probability `p` and the desired output is probability `q`. Naturally, p and q will have the range of `[0,1]`. This cross-entropy is undefined at 0 and 1, we will assume the `p` and `q` have the range of `(0,1)`.
+Below is a generic formula for cross-entropy, where `log` assumes base `e`. Assume we are considering the binary cross-entropy (so, i = 1) for one component of the fuzzy classification desired output. Assume the model's output is probability `p` and the desired output is probability `q`. Naturally, p and q will have the range of `[0,1]`. This cross-entropy is undefined at 0 and 1, we will assume the `p` and `q` have the range of `(0,1)`.
 
 <p><img src="/svgs/d2a9f9a7e8d39592ff0b795fd716718b.svg" align=middle width=609.6255pt height=84.84168pt/></p>
 
@@ -34,4 +34,8 @@ Now, by minimizing the partial derivative of `H(p,v)`, we arrive at a possible s
 
 <p><img src="/svgs/ecce6cb739501abf291c2a1ed07b5260.svg" align=middle width=448.32809999999995pt height=38.773514999999996pt/></p>
 
-The stable state occurs when `p = q`. This shows that the cross-entropy function will push `p` towards the actual value of `q`. This would therefore imply that we can use cross-entropy for soft/fuzzy classification purposes.
+The stable state occurs when `p = q`. This shows that the cross-entropy function will push `p` towards the actual value of `q`. This would therefore imply that we can use cross-entropy for soft/fuzzy classification purposes!
+
+## Pre-commit hook
+
+A pre-commit hook called `pre-commit-mod.sample` has been added to this repository. It provides a temporary bug fix due for the python `readme2tex` module due to rawgit services being down.
